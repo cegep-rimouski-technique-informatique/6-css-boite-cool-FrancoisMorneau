@@ -3,3 +3,28 @@ html {
 }
 
 /* Votre CSS ci-dessous */
+:root {
+  --clr-red: #ae2222;
+  --clr-darker-red: #681414ab;
+  --box-height: 200px;
+  --box-width:250px;
+  --clr-outside-shadow:black;
+  --clre-inside-shadow: white;
+}
+/*linear-gradient(to top left, rgba(0,0,0,0.02),rgba30%)*/
+p {
+  display: flex;
+  width:var(--box-width);
+  height: var(--box-height);
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-red); 
+  border-width: 1px;
+  border-color: var(--clr-darker-red);
+  box-shadow: 3px 3px 14px var(--clr-outside-shadow);
+  box-shadow: inset 1px 1px 50px var( --clre-inside-shadow);
+  border-radius: 15px;
+  font-size: 1.12rem; /* 18/16=1.125 */
+  color:var(--clr-red);
+  text-shadow: 2px 2px black;
+}
